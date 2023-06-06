@@ -20,12 +20,17 @@ body {
 .container {
   height: 100%;
   width: 960px;
-  margin-top: 10px;
 
   align-self: center;
   display: grid;
+  position: relative; /*I'll be able to position the buttons inside container easily now */
 }
 
 .grid-items {
   border: 2px solid black;
+}
+.btn-reset {
+  position: absolute; /*must include absolute otherwise cell at top left of the grid goes missing which make the grid look  weird */
+  top: 20px;
+  left: -200px;
 }
