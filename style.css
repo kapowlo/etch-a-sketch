@@ -12,4 +12,20 @@ body {
   border: 2px solid red;
   height: 100vh;
   background-color: bisque;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  height: 100%;
+  width: 960px;
+  margin-top: 10px;
+
+  align-self: center;
+  display: grid;
+}
+
+.grid-items {
+  border: 2px solid black;
 }
