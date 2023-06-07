@@ -10,12 +10,12 @@ const randomColorButton=document.createElement("button");
 randomColorButton.textContent="Random Color";
 randomColorButton.classList.add("btn","btn-random")
 
-const blackColorButton=document.createElement("button");
-blackColorButton.textContent="Black Color";
-blackColorButton.classList.add("btn","btn-black")
+const grayColorButton=document.createElement("button");
+grayColorButton.textContent="Shades of gray";
+grayColorButton.classList.add("btn","btn-black")
 
 // append buttons to container div
-myContainer.append(randomColorButton,blackColorButton);
+myContainer.append(randomColorButton,grayColorButton);
 
 
 //this func when called makes a grid, the size of the grid is based on user input
@@ -62,11 +62,11 @@ function resetGridSize(){
     }
 }
 
-//after user clicks on this button, when they mouse over a grid cell the bg color will be different shades of white/gray and black
-blackColorButton.addEventListener("click",()=>{
+//after user clicks on this button, when they mouse over a grid cell the bg color will be different shades of gray
+grayColorButton.addEventListener("click",()=>{
    myContainer.querySelectorAll(".grid-items").forEach(cell=>{
     cell.addEventListener("mouseover",()=>{
-        let rgbValue=Math.floor(Math.random()*255)
+        let rgbValue=Math.floor(Math.random()*125)
         color=`rgb(${rgbValue},${rgbValue},${rgbValue})`;
         cell.style.backgroundColor=color; //this line fixed a bug where the bg color would not instantly be changed
     })
