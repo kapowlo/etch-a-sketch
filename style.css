@@ -31,6 +31,24 @@ body {
 }
 .btn-reset {
   position: absolute; /*must include absolute otherwise cell at top left of the grid goes missing which make the grid look  weird */
-  top: 20px;
-  left: -200px;
+  top: 0px;
+  left: -290px;
+}
+.btn {
+  /*for all three buttons blackColor randomColor reset button */
+  padding: 10px;
+  width: 240px;
+  border-radius: 10px;
+
+  font-size: 1.25rem;
+}
+.btn-random {
+  position: absolute;
+  top: 80px;
+  left: -290px;
+}
+.btn-black {
+  position: absolute;
+  top: 160px;
+  left: -290px;
 }
