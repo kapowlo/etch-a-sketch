@@ -11,6 +11,7 @@ h1 {
 body {
   height: 100vh;
   background: #238e40; /* fallback color */
+  /*from top left corner to bottom right */
   background: linear-gradient(to bottom right, #238e40, #008c61, #007c72);
 
   display: flex;
@@ -29,19 +30,22 @@ body {
 .grid-items {
   border: 2px solid black;
 }
-.btn-reset {
-  position: absolute; /*must include absolute otherwise cell at top left of the grid goes missing which make the grid look  weird */
-  top: 0px;
-  left: -290px;
-}
+
 .btn {
-  /*for all three buttons blackColor randomColor reset button */
+  /*for all three buttons greenColor randomColor reset button */
   padding: 6px;
   width: 240px;
   border-radius: 18px;
   background-color: black;
   color: whitesmoke;
   font-size: 1.25rem;
+}
+
+/*position these buttons away from the grid */
+.btn-reset {
+  position: absolute; /*must include absolute otherwise cell at top left of the grid goes missing which make the grid look  weird */
+  top: 0px;
+  left: -290px;
 }
 .btn-random {
   position: absolute;
