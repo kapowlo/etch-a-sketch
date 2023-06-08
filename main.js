@@ -35,7 +35,7 @@ function makeGrid(columns,rows){
    }
    
 }
-makeGrid(16,16); // start with a default grid of 256 cells better user experience to start with a default grid right away.
+makeGrid(30,30); // start with a default grid of 256 cells better user experience to start with a default grid right away.
 
 resetButton.addEventListener("click",resetGridSize);
 function resetGridSize(){
@@ -49,7 +49,7 @@ function resetGridSize(){
     if(askGridSize>100 || askGridSize<=0){ //if user presses ESC/cancel, or enters nothing run this if code block
         let msg=alert("please enter a valid input...remaking default grid");
         color="rgb(0,0,0)" //fixes a bug after clicking on black button and resetting the grid, cell color would be another color instead of default black
-        makeGrid(16,16);
+        makeGrid(30,30);
         return msg;
     }
     else if(isNaN(askGridSize)){
