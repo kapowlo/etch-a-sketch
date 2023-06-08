@@ -9,9 +9,9 @@ h1 {
 }
 
 body {
-  border: 2px solid red;
   height: 100vh;
-  background-color: bisque;
+  background: #238e40; /* fallback color */
+  background: linear-gradient(to bottom right, #238e40, #008c61, #007c72);
 
   display: flex;
   flex-direction: column;
@@ -36,10 +36,11 @@ body {
 }
 .btn {
   /*for all three buttons blackColor randomColor reset button */
-  padding: 10px;
+  padding: 6px;
   width: 240px;
-  border-radius: 10px;
-
+  border-radius: 18px;
+  background-color: black;
+  color: whitesmoke;
   font-size: 1.25rem;
 }
 .btn-random {
@@ -47,7 +48,7 @@ body {
   top: 80px;
   left: -290px;
 }
-.btn-black {
+.btn-green {
   position: absolute;
   top: 160px;
   left: -290px;
