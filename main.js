@@ -24,7 +24,7 @@ function makeGrid(columns,rows){
     myContainer.style.gridTemplateColumns =`repeat(${columns}, 1fr)`; //makes columns based on param value
     myContainer.style.gridTemplateRows = `repeat(${rows}, 1fr)`;//makes rows based on param value
    
-    for(let i=0;i<columns*rows;i++){ // if param 1=16 and param 2=16 this for loop will create 256cells
+    for(let i=0;i<columns*rows;i++){ // if param 1=30 and param 2=30 this for loop will create 900cells
         let gridCells=document.createElement("div");
         
         myContainer.appendChild(gridCells).classList.add("grid-items"); // adds all the divs created to container div
@@ -35,7 +35,7 @@ function makeGrid(columns,rows){
    }
    
 }
-makeGrid(30,30); // start with a default grid of 256 cells better user experience to start with a default grid right away.
+makeGrid(30,30); // start with a default grid of 900 cells better user experience to start with a default grid right away.
 
 resetButton.addEventListener("click",resetGridSize);
 function resetGridSize(){
