@@ -7,6 +7,16 @@
 h1 {
   text-align: center;
 }
+p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.blk-text {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
 
 body {
   height: 100vh;
@@ -21,14 +31,10 @@ body {
 .container {
   height: 100%;
   width: 960px;
-
+  border: 1px solid black;
   align-self: center;
   display: grid;
   position: relative; /*I'll be able to position the buttons inside container easily now */
-}
-
-.grid-items {
-  border: 2px solid black;
 }
 
 .btn {
